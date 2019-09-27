@@ -1,0 +1,55 @@
+{
+  "name": "maison-molecule",
+  "version": "0.0.1",
+  "description": "A test ground to study fundamental properties of JavaScript prototypes.",
+  "main": "dist/index.cjs.js",
+  "module": "dist/index.esm.js",
+  "browser": "dist/index.umd.js",
+  "scripts": {
+    "build-rollup": "rollup -c",
+    "prepare": "npm run build-rollup",
+    "publish": "npm publish",
+    "test": "node test/utils/test-main.js -r @babel/register",
+    "jest-test": "jest"
+  },
+  "dependencies": {
+    "xbrief": "^0.1.32",
+    "veho": "^0.1.15",
+    "elprimero": "^0.0.18",
+    "borel": "^0.0.9",
+    "crostab": "^0.1.21"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.5.5",
+    "@babel/runtime": "^7.5.5",
+    "@babel/register": "^7.5.5",
+    "@babel/preset-env": "^7.5.5",
+    "@babel/plugin-syntax-dynamic-import": "^7.2.0",
+    "@babel/plugin-proposal-class-properties": "^7.5.5",
+    "@babel/plugin-proposal-pipeline-operator": "^7.5.0",
+    "@babel/plugin-transform-runtime": "^7.5.5",
+    "jest": "^24.9.0",
+    "rollup": "^1.20.3",
+    "rollup-plugin-babel": "^4.3.3",
+    "rollup-plugin-terser": "^5.1.2",
+    "rollup-plugin-commonjs": "^10.1.0",
+    "rollup-plugin-node-resolve": "^5.2.0"
+  },
+  "keywords": [
+    "test"
+  ],
+  "author": {
+    "name": "Hoyeung Wong",
+    "email": "hoyeungw@outlook.com",
+    "url": "https://github.com/hoyeungw"
+  },
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hoyeungw/maison-molecule.git"
+  },
+  "bugs": {
+    "url": "https://github.com/hoyeungw/maison-molecule/issues"
+  },
+  "homepage": "https://github.com/hoyeungw/maison-molecule#readme"
+}
